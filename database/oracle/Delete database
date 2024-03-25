@@ -1,0 +1,9 @@
+cp .Xauthority /tmp
+chmod 777 /tmp/.Xauthority
+echo $DISPLAY
+dzdo su - oracle
+cp /tmp/.Xauthority /home/oracle 
+export DISPLAY=localhost:10.0
+dbca
+
+
